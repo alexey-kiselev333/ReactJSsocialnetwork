@@ -1,0 +1,35 @@
+.nav {
+    grid-area: n;
+    background-color: burlywood;
+    padding: 20px;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+}
+.item a.activelink {
+    color: gold;
+}
+.na img {
+    grid-area: n;
+    color: white;
+    background-color: burlywood;
+    padding: 0px 0px 0px;
+    width:50px;
+    text-align: center;
+}
+.nas{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+}
+.k {
+
+    color: white;
+    background-color: burlywood;
+    padding: 50px 0px 0px;
+    text-align: center;
+
+}
+.f{
+    text-align: center;
+}
