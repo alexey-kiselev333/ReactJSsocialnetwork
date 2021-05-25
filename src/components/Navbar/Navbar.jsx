@@ -28,8 +28,7 @@ const Navbar = (props) => {
                     Lisa
                 </div>
 
-            </div>
-        </div>
+            </div></div>
         </nav>
     )
 }
