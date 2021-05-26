@@ -11,7 +11,8 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import { Route} from 'react-router-dom';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-
+import store from "./redux/store";
+import NavbarContainer from "./components/Navbar/NavbarContainer";
 
 const App = (props) => {
 
@@ -20,12 +21,11 @@ const App = (props) => {
 
             <div className='app-wrapper'>
                 <Header/>
-                <Navbar state={props.state} />
+                <NavbarContainer  />
                 <div className='app-wrapper-content'>
-                    <Route exact path='/messages' render={() => <DialogsContainer store={props.store}/> }/>
+                    <Route exact path='/messages' render={() => <DialogsContainer /> }/>
 
-                    <Route exact path='/profile' render={()=> <Profile store={props.store}
-                        />}/>
+                    <Route exact path='/profile' render={()=> <Profile/>}/>
                     <Route exact path='/news' render={()=><News/>}/>
                     <Route exact path='/music' render={()=><Music/>}/>
                     <Route exact path='/settings' render={()=><Settings/>}/>

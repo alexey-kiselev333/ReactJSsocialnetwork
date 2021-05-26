@@ -25,8 +25,7 @@ const dialogsReducer = (state=initialState,action)=>{
             state.newMessageBody = action.body;
             return state
 
-        case UPDATE_NEW_MESSAGE_BODY:
-        state.newMessageBody = action.body;
+
 
         case SEND_MESSAGE:
         let body = state.newMessageBody
