@@ -1,6 +1,7 @@
 import React from "react";
 import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
+import {connect} from "react-redux";
 
 
 
@@ -23,5 +24,17 @@ const DialogsContainer = (props) => {
     dialogsPage={state}/>)
 }
 
+let f1=(state)=>{
+    return {
+        dialogsPage: state.dialogsPage
+    }
+}
+let f2=()=>{
+    return {
+        c:3
+    }
+}
+
+const SuperDialogsContainer = connect(f1,f2)(Dialogs)
 
 export default DialogsContainer;
