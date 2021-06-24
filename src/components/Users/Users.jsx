@@ -11,7 +11,7 @@ let Users=(props)=>{
                 photoURL: 'https://i.pinimg.com/originals/db/a0/c4/dba0c439943a72691801ce5448d5914e.jpg',
                 followed: true,
                 fullname: 'Alexey',
-                status: 'I am a boss',
+                status: 'Js developer',
                 location: {city: "SPB", country: "RUSSIA"}
             },
             {
